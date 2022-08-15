@@ -1,9 +1,11 @@
-import React, { Component } from "react";
+/* eslint-disable */
+import React, { Component } from 'react';
 
 class InputTodo extends Component {
   state = {
-    title: "",
+    title: '',
   };
+
   onChange = (e) => {
     this.setState({
       title: e.target.value,
@@ -14,7 +16,7 @@ class InputTodo extends Component {
     e.preventDefault();
     this.props.addTodoProps(this.state.title);
     this.setState({
-      title: "",
+      title: '',
     });
   };
 
